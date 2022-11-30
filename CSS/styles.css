@@ -87,7 +87,6 @@ ul, a {
 
 .container{
     max-width: 100%;
-    width: 0 auto;
     
 }
 
@@ -142,7 +141,7 @@ footer{
     flex-grow: 1;
     justify-content: space-around;
     align-items: center;
-    margin: 0, 16px;
+    margin: 0 16px;
 
 }
 
@@ -229,7 +228,7 @@ footer{
     display:flex;
     justify-content: flex-end;
     padding: 10px 15px;
-    margin: 0, auto;
+    margin: 0 auto;
     
 }
 
@@ -251,14 +250,105 @@ footer{
 
 @media (min-width: 1024px) {
 
-    .container {
-        width: 70%;
+    .main-header, .intro-card {
+
+        display:flex;
+        flex-direction: row;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 40px;
+        align-items: center;
+       
+      }
+
+    .student-name{
+        text-align: left;
+        width: 50%;
+        margin: 0;
+    }
+      ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width:100%;
+    }
+        
+    
+      .container {
+    
+        width: 100%;
+        margin: 0 auto;
+        padding-inline: 1rem;
+    
+    }
+    
+    li{
+       background-color: transparent;
+    }
+    
+    .project-container{
+        width:30%;
+    }
+    .portfolio-cards{
+        display:flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: space-around;
+      
+    }
+    
+    .about-paragraph{
+        width: 60%;
+    }
+    
+    .about-paragraph-1{
+        width:60%;
+        margin: 0 auto;
+        text-align: left;
+    }
+    
+    div.container{
+        margin-bottom: 40px; 
+    }
+    
+    .card{
+        display:flex;
+        align-items: center;
+    
+    }
+    .profile-pic{
+        display:flex;
+        order: 1;
+    }
+    
+    footer{
+        max-width: 100%;
+       
+    
+    }
+    .footer-list-links, a{
+        display:flex;
+        justify-content: flex-end;
+        padding: 10px 15px;
         margin: 0 auto;
         
     }
-    .main-header, .nav-bar {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
+    
+    .student-name-footer{
+        width: 100%;
+        text-align: left;
+        justify-content: flex-start;
+        margin-left: 20px ;
+        
+    
     }
+    
+    .footer-link{
+        display:none;
+        
+    }
+    
 }
